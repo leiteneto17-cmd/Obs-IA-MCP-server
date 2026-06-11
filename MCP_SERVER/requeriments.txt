@@ -1,0 +1,6 @@
+# OBS Studio MCP Bridge — dependências Python
+# Instale com:  pip install -r requirements.txt
+ 
+mcp>=1.0.0
+obsws-python>=1.7.0
+ 

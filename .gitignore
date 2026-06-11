@@ -1,0 +1,61 @@
+# ==========================================
+# GITIGNORE - OBS MCP Bridge (AgentTruman)
+# ==========================================
+
+# --- Segurança e Configurações Locais ---
+# Bloqueia arquivos que guardam senhas, IPs e portas locais do seu OBS
+obs_context.json
+*.local
+.env
+.env.local
+
+# --- Compilação e Executáveis (PyInstaller / Build) ---
+# Ignora os arquivos gerados ao rodar o 'build_exe.py'
+build/
+dist/
+*.spec
+*.exe
+*.pyd
+*.dll
+*.so
+
+# --- Python Core ---
+# Ignora bytecodes e caches do interpretador Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.manifest
+*.rc
+
+# --- Ambientes Virtuais (Venv) ---
+# Ignora pastas de dependências locais se você usa ambiente isolado
+venv/
+.venv/
+env/
+ENV/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# --- Interface Gráfica e Imagens (Pillow / Tkinter) ---
+# Arquivos temporários gerados pelo processamento de ícones na bandeja
+.webassets-cache
+.pytest_cache/
+.mypy_cache/
+
+# --- IDEs e Editores de Código ---
+# Configurações locais do Cursor, VS Code e outras IDEs
+.vscode/
+.cursor/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# --- Sistema Operacional ---
+# Arquivos inúteis que o Windows e Mac criam automaticamente nas pastas
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
